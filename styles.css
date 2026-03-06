@@ -1,0 +1,80 @@
+.container {
+    height: 100vh; /* viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    background-color: rgb(127, 108, 140);
+    height: 400px; /* h400+w300 */
+    width: 300px;
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.display {
+    background-color: white;
+    height: 60px;
+    border-radius: 10px; /* calc border-radius - padding */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 24px;
+    user-select: none;
+}
+
+.button-area {
+    /* background-color: black; */
+    flex: 1;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+}
+
+button {
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 18px;
+}
+
+button:hover {
+    filter: brightness(1.1);
+    scale: 1.05;
+}
+
+button:active {
+    filter: brightness(0.9);
+    scale: 0.95;
+}
+
+.function-button {
+    background-color: rgb(219, 219, 219);
+}
+
+.number-button {
+    background-color: rgb(59, 59, 59);
+    color: white;
+}
+
+.number-button-selected {
+    background-color: rgb(30, 30, 30);
+    color: white;
+}
+
+.operator-button {
+    background-color: rgb(230, 150, 2);
+    color: white;
+}
+
+.operator-button-selected {
+    background-color: rgb(198, 129, 0);
+    color: white;
+}
